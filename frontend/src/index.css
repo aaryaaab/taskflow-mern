@@ -1,0 +1,16 @@
+:root{
+  --bg-main: #1b1a17;
+  --bg-secondary: #242320;
+  --card: #2e2c28;
+  --accent: #c2a878;
+  --text-main: #e8e3d9;
+  --text-muted: #b8b2a6;
+  --border: #3a3833;
+}
+
+body{
+  margin:0;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: "Georgia", "Times New Roman", serif;
+}

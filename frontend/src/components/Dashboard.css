@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=EB+Garamond:wght@400;500&display=swap');
+
+.dashboard-page {
+  display: flex;
+  height: 100vh;
+  background: #0f0e0b;
+  color: #e6d3a3;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 260px;
+  background: #14120f;
+  padding: 30px 20px;
+  border-right: 1px solid #2a261f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brand {
+  font-family: "Cinzel", serif;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.menu p {
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.menu p:hover {
+  background: rgba(210,170,90,0.12);
+}
+
+.active {
+  background: rgba(210,170,90,0.2);
+}
+
+.logout {
+  background: none;
+  border: 1px solid #a68b5b;
+  padding: 10px;
+  color: #e6d3a3;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  background: #a68b5b;
+  color: #111;
+}
+
+/* MAIN AREA */
+.main-area {
+  flex: 1;
+  padding: 60px;
+}
+
+.header h1 {
+  font-family: "Cinzel", serif;
+  font-size: 42px;
+}
+
+.header p {
+  color: #c9b88e;
+  margin-bottom: 30px;
+}
+
+/* ADD TASK */
+.add-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.add-box input {
+  flex: 1;
+  padding: 14px;
+  background: #14120f;
+  border: 1px solid #3a3427;
+  color: #e6d3a3;
+  border-radius: 8px;
+}
+
+.add-box input:focus {
+  border-color: #a68b5b;
+  outline: none;
+  box-shadow: 0 0 8px rgba(210,170,90,0.25);
+}
+
+.add-box button {
+  background: #a68b5b;
+  border: none;
+  padding: 14px 22px;
+  color: #111;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-box button:hover {
+  background: #d6b97a;
+}
+
+/* TASKS */
+.task-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task {
+  background: #161411;
+  padding: 16px 20px;
+  border-radius: 10px;
+  border: 1px solid #2a261f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.25s;
+}
+
+.task:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(210,170,90,0.15);
+}
+
+.task span {
+  cursor: pointer;
+  font-family: "EB Garamond", serif;
+}
+
+.task.completed span {
+  text-decoration: line-through;
+  color: #8f8668;
+}
+
+.task button {
+  background: none;
+  border: none;
+  color: #c9b88e;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.task button:hover {
+  color: #ff6b6b;
+}
